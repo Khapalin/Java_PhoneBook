@@ -133,7 +133,7 @@ public class PhoneBook {
                 case 1:
                     System.out.print("Введите имя: ");
                     String name = scanner.nextLine();
-                    System.out.print("Введите номер: ");
+                    System.out.print("Введите номер телефона: ");
                     String phone = scanner.nextLine();
                     myPhoneBook.addContact(name, phone);
                     break;
@@ -148,10 +148,10 @@ public class PhoneBook {
                     myPhoneBook.printPhoneBook();
                     break;
                 case 4:
-                    System.out.println("Пока!");
+                    System.out.println("Досвидания.");
                     System.exit(0);
                 default:
-                    System.out.println("Неверный выбор пункта меню.");
+                    System.out.println("Такого пункта меню не существует, пожалуйста повторите.");
             }
         }
     }
